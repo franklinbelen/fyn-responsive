@@ -47,6 +47,7 @@ Estilos
 
     --tamanio-child-col2: 50%;
     --tamanio-child-col3: 33.3%;
+    --tamanio-child-col4: 25%;
     --tamanio-child-col6: 15%;
 }
 
@@ -69,11 +70,20 @@ Estilos
 }
 .Col-2,
 .Col-3,
+.Col-4,
 .Col-6{
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
+
+.Col-2 > *,
+.Col-3 > *,
+.Col-4 > *,
+.Col-6 > *{
+    margin-bottom: 2rem;
+}
+
 .Col-1{
     flex-direction: column;
     align-items: center;
@@ -85,6 +95,9 @@ Estilos
 .Col-3 > *{
     width: var(--tamanio-child-col3);
 }
+.Col-4 > *{
+    width: var(--tamanio-child-col4);
+}
 .Col-6 > *{
     width: var(--tamanio-child-col6);
 }
@@ -93,17 +106,16 @@ Estilos
 
 @media screen and (max-width: 980px){
     .Col-2,
-    .Col3{
+    .Col-3{
         justify-content: space-around;
     }
-    .Col3 > *{
-        margin-bottom: 1rem;
-    }
+
 
     :root{
         --padding-col: 2rem;
         --tamanio-child-col2: 80%;
         --tamanio-child-col3: 50%;
+        --tamanio-child-col4: 50%;
         --tamanio-child-col6: 30%;
     }
 }
@@ -111,12 +123,37 @@ Estilos
     :root{
         --tamanio-child-col2: 100%;
         --tamanio-child-col3: 100%;
+        --tamanio-child-col4: 100%;
         --tamanio-child-col6: 50%;
     }
 }
 
 
+
+
 /* Other */
+.NotPaddingTop{
+    padding-top: 0;
+}
+.NotPaddingRight{
+    padding-right: 0;
+}
+.NotPaddingBottom{
+    padding-bottom: 0;
+}
+.NotPaddingLeft{
+    padding-left: 0;
+}
 .NotPadding{
     padding: 0;
+}
+/*  */
+.TextLeft{
+    text-align: initial;
+}
+.TextCenter{
+    text-align: center;
+}
+.TextRight{
+    text-align: right;
 }
