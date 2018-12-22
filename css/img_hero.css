@@ -1,0 +1,30 @@
+.img_hero{
+    min-height: 90vh;
+    background: rgb(5, 24, 66) url(./img/background-creativeguy-small.jpg) center / cover no-repeat;
+}
+.img_hero h1{
+    font-size: 32px;
+}
+.img_hero p{
+    font-size: 18px;
+}
+.img_hero div{
+    margin-bottom: 0;
+    text-align: center;
+}
+@media screen and (min-width: 782px){
+    .img_hero h1{
+        font-size: 54px;
+    }
+    .img_hero p{
+        font-size: 24px;
+    }
+    .img_hero{
+        min-height: 60vh;
+        background: rgb(5, 24, 66) url(./img/background-creativeguy.jpg) center / cover no-repeat;
+    }
+    .img_hero div{
+        margin: auto;
+        text-align: left;
+    }
+}
